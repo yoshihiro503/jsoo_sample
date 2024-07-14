@@ -2,12 +2,10 @@
 
 Build all projects:
 ```
-$> dune build @examples/default
+$> dune build @default
 ```
 
 Or a single one:
 ```
-$> dune build @examples/<path-to-example-project>/default
+$> dune build @<path-to-example-project>/default
 ```
-
-Compilation artifacts can be found in `${REPO_ROOT}/_build/default/examples/`.
