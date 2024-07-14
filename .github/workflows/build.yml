@@ -46,5 +46,5 @@ jobs:
       - name: Upload the build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.os }}-${{ matrix.ocaml-compiler }}-world.exe
-          path: _build/default/world.exe
+          name: ${{ matrix.os }}-${{ matrix.ocaml-compiler }}-hello.bc.js
+          path: _build/default/bin/main.bc.js
