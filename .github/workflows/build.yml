@@ -17,6 +17,10 @@ jobs:
         ocaml-compiler:
           - "5.0"
           - "4.14"
+        exclude:
+          # No OCaml base compiler packages matched the version 5.0 in the opam-repository yet (2024.07).
+          - os: windows-latest
+            ocaml-compiler: "5.0"
 
     runs-on: ${{ matrix.os }}
 
