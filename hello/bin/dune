@@ -1,4 +1,5 @@
 (executable
- (public_name hello)
  (name main)
- (libraries hello))
+ (modes js)
+ (libraries hello)
+ (preprocess (pps js_of_ocaml-ppx)))
